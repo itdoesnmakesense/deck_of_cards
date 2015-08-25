@@ -13,7 +13,11 @@
 .deckInfo {
   height: 100%; }
 
-.something {
+.player1 {
+  border: 1px solid #eee;
+  height: 370px; }
+
+.player2 {
   border: 1px solid #eee;
   height: 370px; }
 
@@ -24,5 +28,21 @@
   -webkit-box-shadow: 1px 6px 18px -2px #616161;
   -moz-box-shadow: 1px 6px 18px -2px #616161;
   box-shadow: 1px 6px 18px -2px #616161; }
+
+.cardMat {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 530px;
+  -webkit-box-shadow: 1px 6px 18px -2px #616161;
+  -moz-box-shadow: 1px 6px 18px -2px #616161;
+  box-shadow: 1px 6px 18px -2px #616161;
+  border: 1px dotted black; }
+
+.cardInfo {
+  height: 100%; }
+
+.btnDiv {
+  height: 100%;
+  border: 1px dotted black; }
 
 /*# sourceMappingURL=main.css.map */
