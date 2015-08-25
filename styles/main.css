@@ -1,0 +1,28 @@
+.deckContainer {
+  border: 1px solid #eee;
+  height: 570px;
+  width: 950px;
+  margin-top: 25px;
+  -webkit-box-shadow: 1px 6px 18px -2px #616161;
+  -moz-box-shadow: 1px 6px 18px -2px #616161;
+  box-shadow: 1px 6px 18px -2px #616161; }
+
+.deckContent {
+  height: 100%; }
+
+.deckInfo {
+  height: 100%; }
+
+.something {
+  border: 1px solid #eee;
+  height: 370px; }
+
+.shuffleInfo {
+  border: 1px solid #eee;
+  height: 314px;
+  width: 226px;
+  -webkit-box-shadow: 1px 6px 18px -2px #616161;
+  -moz-box-shadow: 1px 6px 18px -2px #616161;
+  box-shadow: 1px 6px 18px -2px #616161; }
+
+/*# sourceMappingURL=main.css.map */

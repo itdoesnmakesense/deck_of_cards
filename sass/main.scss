@@ -1,0 +1,34 @@
+$font-stack: 'Lato', sans-serif;
+$primary-color: #333;
+
+.deckContainer{
+  border: 1px solid #eee;
+  height:570px;
+  width: 950px;
+  margin-top: 25px;
+   -webkit-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+    -moz-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+    box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+}
+.deckContent{
+  //border: 1px solid green;
+  height:100%;
+  
+}
+.deckInfo{
+  //border: 1px dotted red;
+  height:100%;
+}
+.something{
+  border: 1px solid #eee;
+  //background-color: #eee;
+  height: 370px;
+}
+.shuffleInfo{
+  border: 1px solid #eee;
+  height: 314px;
+  width: 226px;
+   -webkit-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+    -moz-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+    box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+}
