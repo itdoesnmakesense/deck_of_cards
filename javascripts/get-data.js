@@ -79,5 +79,5 @@ define(function(require) {
     // }
 
 
-}; // return end bracket// 
+  }; // return end bracket// 
 }); // define end bracket //
