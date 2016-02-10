@@ -18,8 +18,9 @@ requirejs.config({
 });
 
 requirejs(
-  ["dependencies","q","get-data","load-data"],
-  function(dependencies,Q,get,load) {
-
+  ["dependencies","core-logic"],
+  function(dependencies,coreLogic) {
+      
+      coreLogic();
 
   });

@@ -1,57 +1,47 @@
 $font-stack: 'Lato', sans-serif;
 $primary-color: #333;
 
-.deckContainer{
-  border: 1px solid #eee;
-  height:570px;
-  width: 950px;
-  margin-top: 25px;
-   -webkit-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
-    -moz-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
-    box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
-}
+
 .deckContent{
-  //border: 1px solid green;
   height:100%;
-  
+  width: 100%;
 }
-.deckInfo{
-  height: 100%;
-}
-
-.player1{
-  border: 1px solid #eee;
-  //background-color: #eee;
-  height: 370px;
-}
-.player2{
-  border: 1px solid #eee;
-  //background-color: #eee;
-  height: 370px;
-}
-.shuffleInfo{
-  border: 1px solid #eee;
-  height: 314px;
-  width: 226px;
-   -webkit-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
-    -moz-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
-    box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
-}
-.cardMat{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  height: 530px;
-  -webkit-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
-    -moz-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
-    box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
-    border: 1px dotted black;
-}
-.cardInfo{
-  //border: 1px dotted red;
+.player1-deck{
+  /*border: 1px solid black;*/
   height:100%;
 }
+.player2-deck{
+  /*border: 1px solid black;*/
+  height:100%;
+}
+.playerCard{
+  margin-top:25%;
+  img{
+    margin: 0 auto;
+    display: block;
+    height: 414px;
+  }
+}
 
-.btnDiv{
-  height: 100%;
-  border: 1px dotted black;
+#drawBtn{
+  position:absolute;
+  z-index: 1;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button{
+  outline: none !important;
+  box-shadow:0;
+}
+button:hover{
+   outline: 0 !important;
+   box-shadow:none;
+}
+button:focus{
+   outline: 0 !important;
+   box-shadow:none;
 }

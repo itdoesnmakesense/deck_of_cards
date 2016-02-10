@@ -1,48 +1,42 @@
-.deckContainer {
-  border: 1px solid #eee;
-  height: 570px;
-  width: 950px;
-  margin-top: 25px;
-  -webkit-box-shadow: 1px 6px 18px -2px #616161;
-  -moz-box-shadow: 1px 6px 18px -2px #616161;
-  box-shadow: 1px 6px 18px -2px #616161; }
-
 .deckContent {
-  height: 100%; }
-
-.deckInfo {
-  height: 100%; }
-
-.player1 {
-  border: 1px solid #eee;
-  height: 370px; }
-
-.player2 {
-  border: 1px solid #eee;
-  height: 370px; }
-
-.shuffleInfo {
-  border: 1px solid #eee;
-  height: 314px;
-  width: 226px;
-  -webkit-box-shadow: 1px 6px 18px -2px #616161;
-  -moz-box-shadow: 1px 6px 18px -2px #616161;
-  box-shadow: 1px 6px 18px -2px #616161; }
-
-.cardMat {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  height: 530px;
-  -webkit-box-shadow: 1px 6px 18px -2px #616161;
-  -moz-box-shadow: 1px 6px 18px -2px #616161;
-  box-shadow: 1px 6px 18px -2px #616161;
-  border: 1px dotted black; }
-
-.cardInfo {
-  height: 100%; }
-
-.btnDiv {
   height: 100%;
-  border: 1px dotted black; }
+  width: 100%; }
+
+.player1-deck {
+  /*border: 1px solid black;*/
+  height: 100%; }
+
+.player2-deck {
+  /*border: 1px solid black;*/
+  height: 100%; }
+
+.playerCard {
+  margin-top: 25%; }
+  .playerCard img {
+    margin: 0 auto;
+    display: block;
+    height: 414px; }
+
+#drawBtn {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+button {
+  outline: none !important;
+  box-shadow: 0; }
+
+button:hover {
+  outline: 0 !important;
+  box-shadow: none; }
+
+button:focus {
+  outline: 0 !important;
+  box-shadow: none; }
 
 /*# sourceMappingURL=main.css.map */
