@@ -6,23 +6,35 @@ $primary-color: #333;
   height:100%;
   width: 100%;
 }
-.player1-deck{
-  /*border: 1px solid black;*/
+#player1-deck{
+  border: 1px solid red;
   height:100%;
 }
-.player2-deck{
-  /*border: 1px solid black;*/
+#player2-deck{
+  border: 1px solid blue;
   height:100%;
 }
 .playerCard{
   margin-top:25%;
+  /*position:absolute;*/
   img{
     margin: 0 auto;
     display: block;
     height: 414px;
   }
 }
-
+.red{
+  background-color:red;
+  /*position: fixed;*/
+  bottom: 0;
+  height:0;
+}
+.blue{
+  background-color:blue;
+  /*position: fixed;*/
+  bottom: 0;
+  height:0;
+}
 #drawBtn{
   position:absolute;
   z-index: 1;

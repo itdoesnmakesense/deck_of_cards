@@ -15,13 +15,18 @@ define(function (require) {
         $(document).on("click",'#drawBtn',function(data){
             $(this).text('Hit');
            
-            drawCard.Player1();
-            drawCard.Player2();
+            drawCard.Player1()
+            .then(function(){
+                drawCard.Player2();
+            })
+            .done(function(){
+                console.log("got it");
+            });
+           
 
             cardCount -= 1;
             $('#cardCount').html(cardCount);
 
-    // console.log(drawCard.Player1(player1GValue));
         });
 
     }; // End of return function
