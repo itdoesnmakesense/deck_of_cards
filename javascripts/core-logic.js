@@ -14,6 +14,7 @@ define(function (require) {
         // On click #drawBtn, call drawCard module, which displays card from assigned deck_id
         $(document).on("click",'#drawBtn',function(data){
             $(this).text('Hit');
+            $('#p1card-back').addClass("flip-card");
            
             drawCard.Player1()
             .then(function(){
