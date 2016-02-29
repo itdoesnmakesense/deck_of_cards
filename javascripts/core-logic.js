@@ -3,7 +3,6 @@ define(function (require) {
     var q = require("q");
     var getDeck = require("get-deck");
     var drawCard = require("draw-card");
-    var score = require("score");
 
     var cardCount = 52;
     

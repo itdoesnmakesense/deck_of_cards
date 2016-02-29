@@ -105,4 +105,9 @@ button:focus {
 .flip-card {
   animation: backOpacity 5s ease; }
 
+#pcard-back-tie {
+  position: absolute;
+  top: 70;
+  left: 145; }
+
 /*# sourceMappingURL=main.css.map */
