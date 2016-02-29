@@ -5,6 +5,7 @@ define(function(require) {
     // var pilePlayer1 = require("pilePlayer1");
     // var pilePlayer2 = require("pilePlayer2");
     var pile = require("pile");
+    var tie = require("tie");
     
     var p1GValue;
     var	p2GValue;
@@ -121,7 +122,8 @@ define(function(require) {
 	      			});
 	      		}
 	      		else if (p1GValue === p2GValue){
-	      			pile.Tie();
+	      			tie.OriginalDeck();
+
 	      			console.log("tie! lets play WAR!");
 	      		}
 	      	}
