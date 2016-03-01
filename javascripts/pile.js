@@ -17,7 +17,7 @@ define(function(require) {
   
   	Player2: function(p1,p2){
 		var player2 = $('.player2-deck').attr('id');
-	  	var pileUrl = "http://deckofcardsapi.com/api/deck/"+player2+"/pile/pilePlayer1/add/?cards="+p1+","+p2;
+	  	var pileUrl = "http://deckofcardsapi.com/api/deck/"+player2+"/pile/pilePlayer2/add/?cards="+p1+","+p2;
 
 		  	$.ajax({
 		        url: pileUrl
