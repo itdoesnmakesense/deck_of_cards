@@ -5,8 +5,15 @@ define(function(require) {
 
   	var player1; 
   	var player2;
-	var p1CardValue;
-	var p2CardValue; 
+
+  	var p1Cards = [];
+  	var p2Cards = [];
+
+
+	// var p1Card2;
+
+	// var p2Card1;
+	// var p2Card2; 
   return{
 
   	 OriginalDeck: function(){
@@ -18,13 +25,20 @@ define(function(require) {
 	 	$.ajax({
 		   url: drawDeck1
 	    })
-	  	.done(function(data) {
+	  	.then(function(data) {
+	  		//tie cards data
 	  		var card1 = data.cards[0];
 	  		var card2 = data.cards[1];
+	  		//tie card image for second card
 	  		var cardImage = card2.image;
 
-	  		p1CardValue = card2.value;
 	  		
+
+	  		//card codes to add to winner of tie's pile
+	  		p1Cards.push(card1.code,card2.code);
+	  		// p1Card1 = card1.code;
+	  		// p1Card2 = card2.code;
+
 	  		$('.player1-deck').append("<img id='pcard-back-tie' src='images/playing-card-back.jpg'>");
 	        $('.player1-deck').append("<img id='pcard-tie' src="+cardImage+">");
 	        console.log("drawDeck1 data:", data);
@@ -34,39 +48,44 @@ define(function(require) {
 	    $.ajax({
 		   url: drawDeck2
 	    })
-	  	.done(function(data) {
+	  	.then(function(data) {
+	  		//tie cards data
 	  		var card1 = data.cards[0];
 	  		var card2 = data.cards[1];
+	  		//tie card image for second card
 	  		var cardImage = card2.image;
-	  		p2CardValue = card2.value;
 
-	  		console.log("p2CardValue",p2CardValue);
-	  		console.log("p1CardValue",p1CardValue);
+	  		
+	  		
+	  		//card codes to add to winner of tie's pile
+	  		p2Cards.push(card1.code,card2.code);
+	  		// p2Card1 = card1.code;
+	  		// p2Card2 = card2.code;
 
-	  		if(p1CardValue > p2CardValue){
-	      			addToPile.Player1(p1CardValue,p2CardValue);
+	  		if(p1Cards[1] > p2Cards[1]){
+	      			addToPile.Player1(p1Cards, p2Cards);
 	      			console.log("p1");
 	      			$(player1).addClass('red').height(function(n,c){
 	      				return c + 28;
 	      			});
 	      		}
-	      		else if (p2CardValue > p1CardValue){
-	      			addToPile.Player2(p1CardValue,p2CardValue);
+	      		else if (p2Cards[1] > p1Cards[1]){
+	      			addToPile.Player2(p1Cards, p2Cards);
 	      			console.log("p2");
 	      			$(player2).addClass('blue').height(function(n,c){
 	      				return c + 28;
 	      			});
 	      		}
-	      		else if (p1CardValue === p2CardValue){
+	      		else if (p1Cards[1] === p2Cards[1]){
 
-	      			console.log("tie! lets play WAR!");
+	      			console.log("tie! lets play WAR! AGAIN");
 	      		}
 
 	  		
 	  		
 	  		$('.player2-deck').append("<img id='pcard-back-tie' src='images/playing-card-back.jpg'>");  		
 	        $('.player2-deck').append("<img id='pcard-tie' src="+cardImage+">");
-	        console.log("drawDeck2 data:", data);
+	        
 	    });		
 	 }
 
